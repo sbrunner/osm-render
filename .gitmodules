@@ -19,3 +19,6 @@
 [submodule "osm"]
 	path = osm
 	url = git@github.com:gravitystorm/openstreetmap-carto.git
+[submodule "OGCServer"]
+	path = OGCServer
+	url = git@github.com:sbrunner/OGCServer.git
