@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 
 import os
-import sys
 
 from setuptools import setup, find_packages
 
@@ -45,4 +44,9 @@ Tools to generates tiles on OSM data.
     install_requires=install_requires,
     setup_requires=setup_requires,
     tests_require=tests_require,
+    entry_points={
+        'paste.app_factory': [
+            'main = ogcserver.wsgi:ogcserver_map_factory',
+        ],
+    },
 )

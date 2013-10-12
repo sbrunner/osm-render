@@ -1,0 +1,38 @@
+[
+    {
+        "if": {
+            "Datasource.type": "postgis"
+        },
+        "then": {
+            "Datasource.dbname": "gis",
+            "Datasource.password": "www-data",
+            "Datasource.user": "www-data",
+            "Datasource.host": "localhost"
+        }
+    },
+    {
+        "if": {
+            "id": "contour_line"
+        },
+        "then": {
+            "Datasource.file": ""
+        }
+    },
+    {
+        "if": {
+            "id": "hillshade"
+        },
+        "then": {
+            "Datasource.file": ""
+        }
+    },
+    {
+        "if": {
+            "id": "land-high"
+        },
+        "then": {
+            "Datasource.file": ""
+        }
+    }
+]
+

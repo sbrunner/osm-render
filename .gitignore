@@ -1,2 +1,8 @@
 osm_render.egg-info/
 .installed.cfg
+alps-latest.osm.pbf
+update/download.lock
+update/state.txt
+node_modules/
+cache/
+OSMBright/

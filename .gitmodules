@@ -1,15 +1,6 @@
 [submodule "hotosm"]
 	path = hotosm
 	url = git@github.com:hotosm/HDM-CartoCSS.git
-[submodule "benchmark"]
-	path = benchmark
-	url = git@github.com:mapbox/foss4g-benchmark-style.git
-[submodule "tm2"]
-	path = tm2
-	url = git@github.com:mapbox/tm2-default-style.git
-[submodule "mapbox"]
-	path = mapbox
-	url = git@github.com:mapbox/map-styles.git
 [submodule "mapbox-streets"]
 	path = mapbox-streets
 	url = git@github.com:mapbox/open-streets-style.git
