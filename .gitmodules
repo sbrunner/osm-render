@@ -13,3 +13,9 @@
 [submodule "OGCServer"]
 	path = OGCServer
 	url = git@github.com:sbrunner/OGCServer.git
+[submodule "tilecloud"]
+	path = tilecloud
+	url = git@github.com:sbrunner/tilecloud.git
+[submodule "tilecloud-chain"]
+	path = tilecloud-chain
+	url = git@github.com:sbrunner/tilecloud-chain.git
