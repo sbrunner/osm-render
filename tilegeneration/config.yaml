@@ -58,28 +58,28 @@ layer_default:
         hash: 1e3da153be87a493c4c71198366485f290cad43c
 
 layers:
-    hot-21781:
+    hot_21781:
         mapfile: hotosm/mapnik.xml
         grid: 21781
-    hot-2056:
+    hot_2056:
         mapfile: hotosm/mapnik.xml
         grid: 2056
-    osm-21781:
+    osm_21781:
         mapfile: osm/mapnik.xml
         grid: 21781
-    osm-2056:
+    osm_2056:
         mapfile: osm/mapnik.xml
         grid: 2056
-    mapbox-bright-21781:
+    mapbox_bright_21781:
         mapfile: mapbox-bright/mapnik.xml
         grid: 21781
-    mapbox-bright-2056:
+    mapbox_bright_2056:
         mapfile: mapbox-bright/mapnik.xml
         grid: 2056
-    mapbox-streets-21781:
+    mapbox_streets_21781:
         mapfile: mapbox-streets/mapnik.xml
         grid: 21781
-    mapbox-streets-2056:
+    mapbox_streets_2056:
         mapfile: mapbox-streets/mapnik.xml
         grid: 2056
 
