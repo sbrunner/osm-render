@@ -3,4 +3,4 @@ baseUrl=http://download.geofabrik.de/europe/alps-updates
 
 # Defines the maximum time interval in seconds to download in a single invocation.
 # Setting to 0 disables this feature.
-maxInterval = 0
+maxInterval = 86400
