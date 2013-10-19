@@ -11,6 +11,7 @@ README = (
 
 install_requires = [
     'tilecloud-chain',
+    'ogcserver',
 ]
 
 setup_requires = [
