@@ -12,6 +12,7 @@ README = (
 install_requires = [
     'tilecloud-chain',
     'ogcserver',
+    'mapnik2',
 ]
 
 setup_requires = [
