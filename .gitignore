@@ -1,3 +1,4 @@
+*.pyc
 osm_render.egg-info/
 .installed.cfg
 alps-latest.osm.pbf

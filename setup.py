@@ -48,5 +48,8 @@ Tools to generates tiles on OSM data.
         'paste.app_factory': [
             'main = ogcserver.wsgi:ogcserver_map_factory',
         ],
+        'console_scripts': [
+            'generate_configs = tilegeneration:generate_configs'
+        ],
     },
 )
