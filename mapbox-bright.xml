@@ -19,7 +19,7 @@
 </FontSet>
 <FontSet name="fontset-1">
   <Font face-name="Open Sans Bold Italic"/>
-  <Font face-name="DejaVu Sans Bold Italic"/>
+  <Font face-name="DejaVu Sans Bold Oblique"/>
   <Font face-name="unifont Medium"/>
 </FontSet>
 <FontSet name="fontset-2">
@@ -29,7 +29,7 @@
 </FontSet>
 <FontSet name="fontset-3">
   <Font face-name="Open Sans Italic"/>
-  <Font face-name="DejaVu Sans Italic"/>
+  <Font face-name="DejaVu Sans Oblique"/>
   <Font face-name="unifont Medium"/>
 </FontSet>
 <FontSet name="fontset-4">
