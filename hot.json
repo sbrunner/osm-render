@@ -15,6 +15,7 @@
             "id": "contour_line"
         },
         "then": {
+            "status": "off",
             "Datasource.file": ""
         }
     },
@@ -23,6 +24,7 @@
             "id": "hillshade"
         },
         "then": {
+            "status": "off",
             "Datasource.file": ""
         }
     },
@@ -31,6 +33,7 @@
             "id": "land-high"
         },
         "then": {
+            "status": "off",
             "Datasource.file": ""
         }
     }
