@@ -3,6 +3,7 @@ grids:
     21781:
         # resolutions [required]
         resolutions: [1000, 500, 250, 100, 50, 20, 10, 5, 2, 1, 0.5]
+        #resolutions: [1000, 500, 250, 100, 50, 20, 10, 5, 2, 1, 0.5, 0.25, 0.1, 0.05, 0.25]
         # bbox [required]
         bbox: [420000, 30000, 900000, 350000]
         # srs [required]
@@ -21,13 +22,7 @@ caches:
         type: bsddb
         folder: /var/sig/tilecache
         # for GetCapabilities
-        http_url: https://%(host)s/%(folder)s
-        hosts:
-        - wmts0.<host>
-        - wmts1.<host>
-        - wmts2.<host>
-        - wmts3.<host>
-        - wmts4.<host>
+        http_url: http://192.168.1.59/tiles/tiles/
 
 # this defines some defaults values for all the layers
 layer_default:
@@ -96,6 +91,9 @@ generation:
 
 mapcache:
     location: /mapcache
+
+server:
+    cache: local
 
 openlayers:
     # srs, center_x, center_y [required]
