@@ -37,45 +37,87 @@ layer_default:
     meta_size: 4
     meta_buffer: 0
     data_buffer: 128
-    # Meta 2
-    empty_metatile_detection:
-        size: 2200
-        hash: 87747b684b6c2255ed1ddb68a16095bcbcc2f2d8
-    empty_tile_detection:
-        size: 858
-        hash: fb3615767f26711bd55f0654feaeeb7c039576af
-{%
-if update %}
+{% if update %}
     connection: user=www-data password=www-data dbname=tiles host=localhost
     geoms:
     - sql: geom FROM update{%
 endif %}
+    cost: 
+        metatile_generation_time: 0
 
 layers:
     hot_21781:
         mapfile: hotosm/mapnik.xml
         grid: 21781
+        empty_tile_detection:
+            size: 858
+            hash: da4c4c4c73cadfe088f44725bceeda16ba0918ba
+        cost: 
+            tile_generation_time: 30.0
+            tile_size: 20.0
     hot_2056:
         mapfile: hotosm/mapnik.xml
         grid: 2056
+        empty_tile_detection:
+            size: 858
+            hash: da4c4c4c73cadfe088f44725bceeda16ba0918ba
+        cost: 
+            tile_generation_time: 30.0
+            tile_size: 20.0
     osm_21781:
         mapfile: osm/mapnik.xml
         grid: 21781
+        empty_tile_detection:
+            size: 858
+            hash: 
+        cost: 
+            tile_generation_time: 30.0
+            tile_size: 20.0
     osm_2056:
         mapfile: osm/mapnik.xml
         grid: 2056
+        empty_tile_detection:
+            size: 858
+            hash: 
+        cost: 
+            tile_generation_time: 30.0
+            tile_size: 20.0
     mapbox_bright_21781:
         mapfile: OSMBright/mapnik.xml
         grid: 21781
+        empty_tile_detection:
+            size: 858
+            hash: fb3615767f26711bd55f0654feaeeb7c039576af
+        cost: 
+            tile_generation_time: 30.0
+            tile_size: 20.0
     mapbox_bright_2056:
         mapfile: OSMBright/mapnik.xml
         grid: 2056
+        empty_tile_detection:
+            size: 858
+            hash: fb3615767f26711bd55f0654feaeeb7c039576af
+        cost: 
+            tile_generation_time: 30.0
+            tile_size: 20.0
     mapbox_streets_21781:
         mapfile: mapbox-streets/open-streets/mapnik.xml
         grid: 21781
+        empty_tile_detection:
+            size: 858
+            hash: f4d484a3bb8eb22cf08adb834600210f6dc94c6b
+        cost: 
+            tile_generation_time: 30.0
+            tile_size: 20.0
     mapbox_streets_2056:
         mapfile: mapbox-streets/open-streets/mapnik.xml
         grid: 2056
+        empty_tile_detection:
+            size: 858
+            hash: f4d484a3bb8eb22cf08adb834600210f6dc94c6b
+        cost: 
+            tile_generation_time: 30.0
+            tile_size: 20.0
 
 generation:
     default_cache: local
