@@ -1,0 +1,14 @@
+WSGIDaemonProcess tiles:${vars:instanceid} display-name=%{GROUP} user=${vars:modwsgi_user}
+WSGIDaemonProcess wms:${vars:instanceid} display-name=%{GROUP} user=${vars:modwsgi_user}
+
+WSGIScriptAlias /${vars:instanceid}/tiles ${buildout:directory}/buildout/parts/modwsgi_tiles/wsgi
+WSGIScriptAlias /${vars:instanceid}/wms ${buildout:directory}/buildout/parts/modwsgi_wms/wsgi
+
+<Location /${vars:instanceid}/tiles>
+    WSGIProcessGroup tiles:${vars:instanceid}
+    WSGIApplicationGroup %{GLOBAL}
+</Location>
+<Location /${vars:instanceid}/wms>
+    WSGIProcessGroup wms:${vars:instanceid}
+    WSGIApplicationGroup %{GLOBAL}
+</Location>
