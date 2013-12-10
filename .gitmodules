@@ -19,3 +19,6 @@
 [submodule "tilecloud-chain"]
 	path = tilecloud-chain
 	url = git@github.com:sbrunner/tilecloud-chain.git
+[submodule "osm-fr"]
+	path = osm-fr
+	url = git@github.com:cquest/osmfr-cartocss.git
